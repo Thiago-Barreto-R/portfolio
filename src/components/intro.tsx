@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion';
 
-export const IntroAnimation = ({ onComplete: any }) => {
+interface IntroAnimationProps {
+  onComplete: any;
+}
+
+export const IntroAnimation = ({ onComplete }: IntroAnimationProps) => {
   return (
     <motion.div
       initial={{ opacity: '100%' }}
