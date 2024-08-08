@@ -14,11 +14,13 @@ export default function Home() {
       ) : (
         <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <section className="relative flex h-screen w-full flex-col items-center justify-center">
-            <p className="absolute left-[330px] top-44 text-xl">
-              Thiago Rodrigues
-            </p>
-            <div className="flex flex-col text-5xl">
-              <p>Desenvolvedor Full-Stack</p> <p>&</p> <p>UX/UI designer</p>
+            <div>
+              <p className="text-sm">
+                Thiago <span className="text-stone-300">Rodrigues</span>
+              </p>
+              <div className="flex flex-col text-2xl sm:text-5xl">
+                <p>Desenvolvedor Full-Stack</p> <p>&</p> <p>UX/UI designer</p>
+              </div>
             </div>
           </section>
         </motion.main>
