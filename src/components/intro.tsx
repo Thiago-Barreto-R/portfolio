@@ -14,14 +14,14 @@ export const IntroAnimation = ({ onComplete }: IntroAnimationProps) => {
       onAnimationComplete={onComplete}
     >
       <div className="text-center">
-        <motion.h3
-          className="text-sm dark:text-slate-500"
+        <motion.p
+          className="text-xl dark:text-slate-500"
           initial={{ x: '-100px', opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 5 }}
         >
-          <span className="dark:text-slate-50">Thiago</span> Rodrigues
-        </motion.h3>
+          <span className="dark:text-slate-50">Thiago B.</span> Rodrigues
+        </motion.p>
         <motion.h1
           className="absolute text-5xl font-bold transition-all sm:text-9xl"
           initial={{ x: '-100px', opacity: 0 }}

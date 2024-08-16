@@ -22,6 +22,8 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from '@/components/ui/navigation-menu';
+import Image from 'next/image';
+import Logo from '../../public/Group 49.png';
 
 export default function Header() {
   const pathname = usePathname();
@@ -29,7 +31,7 @@ export default function Header() {
   return (
     <header className="fixed left-0 top-0 z-40 flex w-full justify-center bg-slate-800 bg-opacity-30">
       <nav className="flex w-[1024px] items-center justify-center p-2 sm:justify-between">
-        <h1>T.B.R - Developer</h1>
+        <Image src={Logo} alt="Logo" className="h-20 w-20" />
 
         <div className="hidden sm:flex sm:gap-10 sm:text-sm">
           <NavigationMenu>
@@ -48,7 +50,7 @@ export default function Header() {
                     href="/about"
                     className={`rounded p-2 transition-all duration-300 hover:bg-slate-100 dark:hover:bg-slate-950 ${pathname === '/about' ? 'bg-slate-100 dark:bg-slate-950' : ''}`}
                   >
-                    Sobre
+                    Sobre mim
                   </Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink>
@@ -56,7 +58,7 @@ export default function Header() {
                     href="/work"
                     className={`rounded p-2 transition-all duration-300 hover:bg-slate-100 dark:hover:bg-slate-950 ${pathname === '/work' ? 'bg-slate-100 dark:bg-slate-950' : ''}`}
                   >
-                    Trabalho
+                    Serviços
                   </Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink>
@@ -64,7 +66,7 @@ export default function Header() {
                     href="/contact"
                     className={`rounded p-2 transition-all duration-300 hover:bg-slate-100 dark:hover:bg-slate-950 ${pathname === '/contact' ? 'bg-slate-100 dark:bg-slate-950' : ''}`}
                   >
-                    Contato
+                    Contatos
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
