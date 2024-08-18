@@ -17,7 +17,7 @@ export default function Home() {
       ) : (
         <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <section className="flex h-screen w-full items-center justify-around">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-1">
               <p className="flex flex-col text-2xl sm:text-5xl">
                 Dev. Full-Stack <p>&</p> Designer UX/UI
               </p>

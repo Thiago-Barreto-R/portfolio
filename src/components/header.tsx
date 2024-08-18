@@ -31,7 +31,7 @@ export default function Header() {
   return (
     <header className="fixed left-0 top-0 z-40 flex w-full justify-center bg-slate-800 bg-opacity-30">
       <nav className="flex w-[1024px] items-center justify-center p-2 sm:justify-between">
-        <Image src={Logo} alt="Logo" className="h-20 w-20" />
+        <Image src={Logo} alt="Logo" className="h-14 w-14" />
 
         <div className="hidden sm:flex sm:gap-10 sm:text-sm">
           <NavigationMenu>
