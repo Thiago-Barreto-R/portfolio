@@ -10,7 +10,7 @@ export const IntroAnimation = ({ onComplete }: IntroAnimationProps) => {
       initial={{ opacity: '100%' }}
       animate={{ opacity: 0 }}
       transition={{ duration: 6 }}
-      className="absolute z-50 flex h-screen w-screen items-center justify-center bg-slate-50 dark:bg-black"
+      className="absolute left-0 top-0 z-50 flex h-screen w-screen items-center justify-center bg-slate-50 dark:bg-black"
       onAnimationComplete={onComplete}
     >
       <div className="text-center">
