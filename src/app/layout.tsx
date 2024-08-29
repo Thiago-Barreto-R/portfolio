@@ -1,10 +1,7 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/header';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Thiago B. Rodrigues - Developer',
@@ -19,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className="scroll-smooth">
       <body
-        className={`flex min-h-screen w-full flex-col items-center justify-center px-44 ${inter.className}`}
+        className={`flex min-h-screen w-full flex-col items-center justify-center px-44`}
       >
         <ThemeProvider
           attribute="class"
